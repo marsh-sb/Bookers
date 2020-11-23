@@ -1,18 +1,16 @@
-<body>
-    <p id="notice"></p>
+
+<p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  リーダブルコード
+  <strong>Title</strong>
+  <%= @book.title %>
 </p>
 
 <p>
-  <strong>Body:</strong>
-  より良いコードを書くためのシンプルで実践的なテクニック
+  <strong>Body</strong>
+  <%= @book.body %>
 </p>
 
-<a class="edit_241866" href="/books/241866/edit">Edit</a> |
-<a class="back" href="/books">Back</a>
-
-  
-</body>
+<%= link_to 'Edit', edit_book_path %>
+|
+<%= link_to 'Back', books_path %>
